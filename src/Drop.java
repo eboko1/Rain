@@ -1,19 +1,22 @@
-
+import java.awt.*;
 
 /**
  * Created by Vika on 30.12.2016.
  */
 public class Drop {
-    float x= 640/2;
-    float y=0;
-    float yspeed=1;
+    int x = 640 / 2;
+    int y = 0;
+    int yspeed = 1;
 
-    void fall(){
-        y=y+yspeed;
+    public void fall() {
+        y = y + yspeed;
     }
 
-    void show(){}
+    public void show(Graphics g) {
+        g.setColor(new Color(138, 43, 226));
+       g.drawLine(y, x, x, y + 10);
 
-
-
+    }
 }
+
+

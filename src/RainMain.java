@@ -17,17 +17,22 @@ public class RainMain extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         add(p);
         setVisible(true);
+        setup();
+        draw();
     }
+
+
     public  void setup(){
         d=new Drop();
     }
+
     public void draw(){
-        setBackground(230,230,250);
+        setBackground(new Color(230,230,250));
+        d.fall();
+        d.show();
     }
 
-    private void setBackground(int a,int b, int c) {
 
-    }
 
 
 
