@@ -1,3 +1,5 @@
+package fvi.main;
+
 import javax.swing.*;
 
 /**
