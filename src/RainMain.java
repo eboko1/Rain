@@ -1,19 +1,22 @@
 import javax.swing.*;
 
 /**
- * Created by Vika on 30.12.2016.
+ * Created by Vika on 31.12.2016.
  */
-public class RainMain   {
-  public static void main (String arg[]) {
+public class RainMain extends JFrame {
+    public final int WIDTH=640;
+    public final int HEIGHT=360;
+
+    public RainMain (){
+        setSize(WIDTH,HEIGHT);
+        setResizable(false);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        add(new RainPanel());
+        setVisible(true);
+    }
+    public static void main (String[] args) {
+        new RainMain();
+    }
 
 
-
-
-    JFrame f = new JFrame("Blue Rain");
-    f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    Drop d = new Drop();
-    f.setSize(640,360);
-    f.setVisible(true);
-    f.add(d);
-  }
 }
